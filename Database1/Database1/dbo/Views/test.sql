@@ -1,3 +1,3 @@
-﻿create view test as 
+﻿CREATE view test as 
 
-select * from [dbo].[vOpportunityForecastCategoryHistory]
+select [Opportunity],[ForecastCategory],[OpportunityID] from [dbo].[vOpportunityForecastCategoryHistory]

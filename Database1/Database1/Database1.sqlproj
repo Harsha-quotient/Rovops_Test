@@ -186,5 +186,6 @@
     <Build Include="dbo\Stored Procedures\usp_LoadFactTarget.sql" />
     <Build Include="dbo\Stored Procedures\usp_LoadClariActivityData.sql" />
     <Build Include="dbo\Stored Procedures\usp_LoadDimopportunityLine_01202021.sql" />
+    <Build Include="Security\Permissions.sql" />
   </ItemGroup>
 </Project>

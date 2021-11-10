@@ -1,0 +1,8 @@
+﻿GRANT SELECT
+    ON SCHEMA::[dbo] TO [SSRS_User];
+
+
+GO
+GRANT EXECUTE
+    ON SCHEMA::[dbo] TO [SSRS_User];
+
