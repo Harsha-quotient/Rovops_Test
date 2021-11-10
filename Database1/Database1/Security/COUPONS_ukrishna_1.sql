@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [COUPONS\ukrishna]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

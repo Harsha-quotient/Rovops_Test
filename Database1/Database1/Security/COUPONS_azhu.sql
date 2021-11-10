@@ -1,0 +1,2 @@
+﻿CREATE USER [COUPONS\azhu] FOR LOGIN [COUPONS\azhu];
+
