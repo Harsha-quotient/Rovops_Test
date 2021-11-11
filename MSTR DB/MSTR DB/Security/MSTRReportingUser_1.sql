@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [MSTRReportingUser]
+    WITH PASSWORD = N'p{zxdb7vxqh_pBb|xgp{gssDmsFT7_&#$!~<qcrUjpksOpzu', SID = 0x3FB1601F892CA148B92BAB5C479913B9, DEFAULT_DATABASE = [MSTRReportingDB], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

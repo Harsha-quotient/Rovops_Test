@@ -1,0 +1,2 @@
+﻿CREATE USER [SSRS_User] FOR LOGIN [SSRS_User];
+

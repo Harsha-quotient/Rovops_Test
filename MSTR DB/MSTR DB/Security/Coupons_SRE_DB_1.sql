@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Coupons\SRE_DB]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

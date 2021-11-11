@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>MSTR_DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{4abad67e-9e41-4828-8d55-dedda217e965}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>MSTR_DB</RootNamespace>
+    <AssemblyName>MSTR_DB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Clari_Email_Activity.sql" />
+    <Build Include="dbo\Tables\FactTargets_2021.sql" />
+    <Build Include="dbo\Tables\FactTargets_2021_06162021.sql" />
+    <Build Include="dbo\Tables\DimAccountInfo_New_06152021.sql" />
+    <Build Include="dbo\Tables\MDM_DAY_DIM.sql" />
+    <Build Include="dbo\Tables\FactCSFDaily.sql" />
+    <Build Include="dbo\Tables\MLOTT_WriteBack.sql" />
+    <Build Include="dbo\Tables\AtRisk_WriteBack.sql" />
+    <Build Include="dbo\Tables\OpportunityMaster.sql" />
+    <Build Include="dbo\Tables\AtRisk_WriteBack_History.sql" />
+    <Build Include="dbo\Tables\MLOTT_WriteBack_History.sql" />
+    <Build Include="dbo\Tables\SellType_Revenue.sql" />
+    <Build Include="dbo\Tables\FactCSFDaily_old.sql" />
+    <Build Include="dbo\Tables\LostOppFactRevSchedule.sql" />
+    <Build Include="dbo\Tables\Clari_Activity.sql" />
+    <Build Include="dbo\Tables\MDM_DAY_DIM_BKP_100520.sql" />
+    <Build Include="dbo\Tables\vOpportunityForecastCategoryHistory.sql" />
+    <Build Include="dbo\Tables\FactTargets.sql" />
+    <Build Include="dbo\Tables\LostOppFactRevSchedule_06132021.sql" />
+    <Build Include="dbo\Tables\DimOpportunity.sql" />
+    <Build Include="dbo\Tables\FactTargets_2020.sql" />
+    <Build Include="dbo\Tables\DimAccountInfo_New.sql" />
+    <Build Include="dbo\Tables\DimOpportunityLine.sql" />
+    <Build Include="dbo\Tables\DimOpportunityLine_WriteBack.sql" />
+    <Build Include="dbo\Tables\FactOpportunity.sql" />
+    <Build Include="dbo\Views\vDimProduct.sql" />
+    <Build Include="dbo\Views\vDimDate.sql" />
+    <Build Include="dbo\Views\vDimMonth.sql" />
+    <Build Include="dbo\Views\vDimQuarter.sql" />
+    <Build Include="dbo\Views\test.sql" />
+    <Build Include="dbo\Views\vDimWeek.sql" />
+    <Build Include="dbo\Views\vDimYear.sql" />
+    <Build Include="dbo\Views\vDimOpportunity.sql" />
+    <Build Include="dbo\Views\vDimOpportunityLine.sql" />
+    <Build Include="dbo\Views\vDimProductType.sql" />
+    <Build Include="dbo\Views\vDimRetailer.sql" />
+    <Build Include="dbo\Views\vDimBrand.sql" />
+    <Build Include="dbo\Views\vDimAccountInfo.sql" />
+    <Build Include="dbo\Views\vDimEST_Rev_Date.sql" />
+    <Build Include="dbo\Views\vDimEST_Rev_Month.sql" />
+    <Build Include="dbo\Views\vDimEST_Rev_Week.sql" />
+    <Build Include="dbo\Views\vDimEST_Rev_Quarter.sql" />
+    <Build Include="dbo\Views\vDimEST_Rev_Year.sql" />
+    <Build Include="dbo\Views\vFactRevenueSchedule_01202021.sql" />
+    <Build Include="dbo\Views\vMLOTT_WriteBack.sql" />
+    <Build Include="dbo\Views\vAtRisk_03182021.sql" />
+    <Build Include="dbo\Views\vAtRisk_WriteBack.sql" />
+    <Build Include="dbo\Views\vDimOpportunity_03182021.sql" />
+    <Build Include="dbo\Views\vAtRisk.sql" />
+    <Build Include="dbo\Views\vMLOTT.sql" />
+    <Build Include="dbo\Views\vMLOTT_CID.sql" />
+    <Build Include="dbo\Views\vDimOpportunity_06132021.sql" />
+    <Build Include="dbo\Views\vDimOpportunityLine_06132021.sql" />
+    <Build Include="dbo\Views\vClari_Email_Activity_CJ.sql" />
+    <Build Include="dbo\Views\vDimCreated_Date.sql" />
+    <Build Include="dbo\Views\vDimCreated_Month.sql" />
+    <Build Include="dbo\Views\vDimCreated_Quarter.sql" />
+    <Build Include="dbo\Views\vDimDerivedActivity_Date.sql" />
+    <Build Include="dbo\Views\vDimDerivedActivity_Month.sql" />
+    <Build Include="dbo\Views\vDimDerivedActivity_Quarter.sql" />
+    <Build Include="dbo\Views\vFactRevenueSchedule_01062021.sql" />
+    <Build Include="dbo\Views\vLostOppFactRevSchedule .sql" />
+    <Build Include="dbo\Views\vFactOpportunity.sql" />
+    <Build Include="dbo\Views\vDimOpportunityLine_WriteBack.sql" />
+    <Build Include="dbo\Views\vFactCSF.sql" />
+    <Build Include="dbo\Views\vFactRevenueSchedule.sql" />
+    <Build Include="dbo\Views\vFactTargets.sql" />
+    <Build Include="Security\COUPONS_atak.sql" />
+    <Build Include="Security\COUPONS_hsaluja.sql" />
+    <Build Include="Security\COUPONS_nkakumanu.sql" />
+    <Build Include="Security\COUPONS_rvenkatesan.sql" />
+    <Build Include="Security\COUPONS_nangadimath.sql" />
+    <Build Include="Security\COUPONS_rparbhakar.sql" />
+    <Build Include="Security\COUPONS_rparbhakar_1.sql" />
+    <Build Include="Security\COUPONS_nshah.sql" />
+    <Build Include="Security\COUPONS_rwendin.sql" />
+    <Build Include="Security\COUPONS_azhu.sql" />
+    <Build Include="Security\COUPONS_rasharma.sql" />
+    <Build Include="Security\MSTRReportingUser.sql" />
+    <Build Include="Security\MSTRReportingUser_1.sql" />
+    <Build Include="Security\COUPONS_ukrishna.sql" />
+    <Build Include="Security\COUPONS_ukrishna_1.sql" />
+    <Build Include="Security\SC5_NocTeam.sql" />
+    <Build Include="Security\COUPONS_rmcLaughlin.sql" />
+    <Build Include="Security\COUPONS_NOC.sql" />
+    <Build Include="Security\Coupons_SRE_DB.sql" />
+    <Build Include="Security\Coupons_SRE_DB_1.sql" />
+    <Build Include="Security\COUPONS_vkakarla.sql" />
+    <Build Include="Security\SSRS_User.sql" />
+    <Build Include="Security\SSRS_User_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\udf_returnMonday.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_08172021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimopportunityLine.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_Bkp.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadMasterOpportunity_03182021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimopportunity_03182021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimopportunityLine_08112020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_10032020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadSelltype_Revenue.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_06232021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_07302020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_08162020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadLostOpp_FactRevSchedule_06132021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_08132020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimCPGAccount.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadLostOpp_FactRevSchedule.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_01062021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadMasterOpportunity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadFactOpporuntiy.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_01202021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimopportunity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_02172021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_10212020.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_04202021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimaccountInfo_06152021.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadFactTarget.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadClariActivityData.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LoadDimopportunityLine_01202021.sql" />
+  </ItemGroup>
+</Project>

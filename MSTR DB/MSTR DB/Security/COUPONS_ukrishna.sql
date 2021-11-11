@@ -1,0 +1,2 @@
+﻿CREATE USER [COUPONS\ukrishna] FOR LOGIN [COUPONS\ukrishna];
+

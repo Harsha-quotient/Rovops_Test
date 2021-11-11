@@ -1,0 +1,2 @@
+﻿CREATE USER [COUPONS\hsaluja] FOR LOGIN [COUPONS\hsaluja];
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [Coupons\SRE_DB] FOR LOGIN [Coupons\SRE_DB];
+

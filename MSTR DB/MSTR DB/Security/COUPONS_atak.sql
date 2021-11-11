@@ -1,0 +1,2 @@
+﻿CREATE USER [COUPONS\atak] FOR LOGIN [COUPONS\atak];
+
